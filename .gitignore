@@ -19,8 +19,7 @@ emails/
 email_intelligence.log
 
 # Word documents
-Email_Intelligence_Search_Phase1_KT.docx
-Email_Intelligence_Fixes_Review.docx
+*.docx
 
 # OS files
 .DS_Store
