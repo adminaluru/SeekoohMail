@@ -1,0 +1,25 @@
+# Email Intelligence Search — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Email parsing
+pywin32>=306                  # PST parsing on Windows via Outlook COM (no C++ build tools needed)
+# libpff-python>=20231205     # PST parsing on Linux/Mac (requires C++ build tools on Windows — skip)
+mail-parser>=3.15.0           # mbox / eml parsing
+
+# AI & Embeddings
+openai>=1.30.0                # text-embedding-3-small + gpt-4o-mini
+
+# Vector database
+chromadb>=0.5.0               # Local vector store
+
+# API layer
+fastapi>=0.111.0              # REST API (swap-enabler between Streamlit and React)
+uvicorn>=0.30.0               # ASGI server for FastAPI
+
+# Presentation layer
+streamlit>=1.35.0             # Phase 1 UI (replaced by React + Tailwind in Phase 2)
+requests>=2.32.0              # Streamlit → FastAPI HTTP calls
+
+# Shared utilities
+python-dotenv>=1.0.0          # .env loader
+pydantic>=2.7.0               # Request/response models (FastAPI)

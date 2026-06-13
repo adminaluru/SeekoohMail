@@ -1,0 +1,27 @@
+# Environment — contains secrets (OPENAI_API_KEY etc.)
+.env
+
+# ChromaDB — vector database (binary, large, regeneratable by re-ingesting)
+chroma_db/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# PST/email files — personal data, large size
+emails/
+
+# Log file — regenerated at runtime
+email_intelligence.log
+
+# Word documents
+Email_Intelligence_Search_Phase1_KT.docx
+Email_Intelligence_Fixes_Review.docx
+
+# OS files
+.DS_Store
+Thumbs.db
